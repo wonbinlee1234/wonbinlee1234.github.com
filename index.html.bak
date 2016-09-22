@@ -6,18 +6,20 @@
   <meta name="Author" content="">
   <meta name="Keywords" content="">
   <meta name="Description" content="">
-  <script src="jquery-3.1.0.js"></script>
   <title>Document</title>
  </head>
  <style type="text/css">
  *{margin: 0; padding: 0;}
+ #wrap{width: 1920px; height: 2112px; position: absolute;}
  #b-img{width: 100%; height: 100%; position:absolute; z-index:-999;}
- .kcc-line{width: 162px; height: 2px; background-color: blue; margin-left:300px ; margin-top: 80px; position:absolute;}
+ header{width: 1545px; height: 150px; position: absolute;}
+ .kcc-line{width: 162px; height: 2px; background-color: blue; margin-left:300px ; margin-top: 42px; position:absolute;}
  body{width: 100%; height: 100%; position:absolute;}
- .header-img{margin-left:300px; margin-top: 100px; position:absolute;}
- .menu{margin-top: ;margin-left: 780px; position:absolute;}
- .menu2{margin-left: 700px; margin-top: 80px; position:absolute;}	
- .menu-line{width: 780px; height: 5px; background-color: black; position:absolute; margin-left: 700px; margin-top: 75px;}
+ .header-img{margin-left:300px; margin-top: 62px; position:absolute;}
+ .menu{margin-top: -5px;margin-left: 780px; position:absolute;}
+ .menu2{margin-left: 700px; margin-top: 68px; position:absolute;}	
+ .menu-line{width: 735px; height: 5px; background-color: black; position:absolute; margin-left: 700px; margin-top: 42px;}
+ 
  .li{list-style:none; display:inline-block; line-height:50px;}
  .li2{display:inline-block;}
  .li3{list-style:none;}
@@ -38,42 +40,38 @@
  .li2:last-child{background-color: ;}
  .li2:last-child:after{content:none;}
 
- .li3:after{content:"";}
- .li3:first-child{background-color: ;}
- .li3:nth-child(2){background-color: ;}
- .li3:nth-child(3){background-color: ;}
- .li3:last-child{background-color: ;}
- .li3:last-child:after{content:none;}
-
- .li5:after{content:"|"; margin:25px; color:gray;}
+ .li5:after{content:"|"; margin:11px; color:gray;}
  .li5:first-child{background-color: ;}
  .li5:nth-child(2){background-color: ;}
  .li5:nth-child(3){background-color: ;}
  .li5:last-child{background-color: ;}
  .li5:last-child:after{content:none;}
 
- .sv{width: 200px; height: 250px; margin-left: 290px; margin-top: 250px;}
- .sv-line{width: 200px; height: 5px; background-color: red; list-style:none; margin-top: 10px;}
- .mn-line{width: 200px; height: 2px; background-color: gray; list-style: none; opacity:50; position:absolute;}
- .us-line{width: 780px; height: 5px; background-color: black; position:absolute; margin-left: 700px; margin-top: -175px;} 
+ .sv{width: 200px; height: 250px; margin-left: 290px; margin-top: 207px;}
+ .sv-line{width: 161px; height: 5px; background-color: red; list-style:none; margin-top: 10px;}
+ .mn-line{width: 161px; height: 2px; background-color: gray; list-style: none; opacity:50; position:absolute;}
+ .us-line{width: 735px; height: 5px; background-color: black; position:absolute; margin-left: 700px; margin-top: -180px;} 
 
- #uswrap{width: 780px; height: 1727px; position:absolute; margin-left: 700px; margin-top: -135px;}
- .usbox{width: 150px; height: 130px; display: inline-block; margin-top: 50px; background-color: #e7e7e7; text-align:center; line-height: 130px;}
- .tg{width: 60px; height: 130px;position: absolute; display: inline-block; text-align: center; line-height: 120px;font-size:2em; color:#e7e7e7;}
- .tx-line{width: 780px; height: 5px; background-color: #e7e7e7; position:absolute; margin-top: 30px;}
+ #uswrap{width: 900px; height: 1727px; position:absolute; margin-left: 700px; margin-top: -135px;}
+ .usbox{width: 159px; height: 93px; display: inline-block; margin-top: 50px; background-color: #f2f2f2; text-align:center; line-height: 100px;}
+ .tg{width: 60px; height: 130px;position: absolute; display: inline-block; text-align: center; line-height: 100px;font-size:2em; color:#f1f1f2;}
+ 
+ .tx-line{width: 735px; height: 5px; background-color: #e7e7e7; position:absolute; margin-top: 23px;}
 
- .c-line{width: 780px; height: 5px; background-color: #e7e7e7; position: absolute; margin-top: 30px;}
+ .c-line{width: 735px; height: 5px; background-color: #e7e7e7; position: absolute; margin-top: 30px;}
  .c2-line{width: 1100px; height: 5px; background-color: #e7e7e7; position: absolute; margin-top: 30px; margin-left: -300px;}
 
- footer{width: 100%; height: 400px;margin-top: 1600px; position:absolute;}
- .li4-wrap{width: 700px; height: 50px; margin-left: 300px;}
+ footer{width: 100%; height: 400px;margin-top: 1515px; position:absolute;}
+ .li4-wrap{width: 700px; height: 50px; margin-left: 300px; margin-top: -40px;}
  .li5-wrap{width: 1200px; height: 300px; margin-left: 400px;}
  </style>
  <body>
-    <div id="b-img"><img src="sky.jpg"></div>
+ <div id="wrap">
+    <div id="b-img"><img src="BG_TOP.png"></div>
+	<header>
     <div class="menu">
         <ul>
-            <li class="li">wonbinLee님 환영합니다</li>
+            <li class="li">justhwoo님 환영합니다</li>
             <li class="li">
                 회원정보수정</li>
             <li class="li">
@@ -84,44 +82,28 @@
                 사이트맵</li>
         </ul>
     </div>
-    <div class="menu2">
-        <ul>
-            <li class="li2">
-                <strong>INTRODUCTION<br>클럽소개</li>
-            </strong>
-            <li class="li2">
-                <strong>RESERVATION<br>예약하기</li>
-            </strong>
-            <li class="li2">
-                <strong>COURSE<br>코스안내</li>
-            </strong>
-            <li class="li2">
-                <strong>FACILITIES<br>시설안내</li>
-            </strong>
-            <li class="li2">
-                <strong>COMMUNITY<br>커뮤니티</li>
-            </strong>
-        </ul>
-    </div>
+	<img src="MAINMENU copy.png" width="735" height="29" border="0" alt="" class="menu2">
     <div class="kcc-line"></div>
     <div class="menu-line"></div>
     <div class="header-img"><img src="kcc.png"></div>
+	</header>
     <div class="sv">
         <ul>
-            <p style="text-align:center; font-size:38px;">
+            <p style="font-size:25px; line-height: 10px; ">
                 <strong>회원서비스</strong>
             </p>
-            <li class="sv-line" style="margin-top: 25px;"></li>
-            <li class="mn-line" style="margin-top:45px;"></li>
-            <li class="mn-line" style="margin-top:95px;"></li>
-            <li class="mn-line" style="margin-top:135px;"></li>
-            <li class="mn-line" style="margin-top:180px;"></li>
-            <li class="mn-line" style="margin-top:215px;"></li>
-            <li class="li3" style="margin-top: 15px; font-size:20px;">로그인</li>
-            <li class="li3" style="margin-top: 15px; font-size:20px;">회원가입</li>
-            <li class="li3" style="margin-top: 15px; font-size:20px;">아이디/비밀번호찾기</li>
-            <li class="li3" style="margin-top: 15px; font-size:20px;">회원정보 수정</li>
-            <li class="li3" style="margin-top: 15px; font-size:20px;">개인정보 취급방침</li>
+			
+            <li class="sv-line" style="margin-top:21px;"></li>
+            <li class="mn-line" style="margin-top:44px;"></li>
+            <li class="mn-line" style="margin-top:77px;"></li>
+            <li class="mn-line" style="margin-top:110px;"></li>
+            <li class="mn-line" style="margin-top:143px;"></li>
+            <li class="mn-line" style="margin-top:176px;"></li>
+            <li class="li3" style="margin-top: 12px; font-size:15px;">로그인</li>
+            <li class="li3" style="margin-top: 20px; font-size:15px;  color:#e60012">회원가입</li><p style="margin-left: 140px; margin-top: -23px; position: absolute;  color:#e60012">></p>
+            <li class="li3" style="margin-top: 12px; font-size:15px;">아이디/비밀번호찾기</li>
+            <li class="li3" style="margin-top: 15px; font-size:15px;">회원정보 수정</li>
+            <li class="li3" style="margin-top: 13px; font-size:15px;">개인정보 취급방침</li>
         </ul>
     </div>
     <p style="position:absolute; margin-top: -210px; margin-left: 1270px;">홈 > 회원서비스 > 회원가입</p>
@@ -133,15 +115,15 @@
         <div class="usbox" style="margin-left: 40px;">본인인증</div>
         <div
             class="usbox"
-            style="background-color:blue; color:white; margin-left:50px;">회원정보입력</div>
+            style="background-color:#1059a8; color:white; margin-left:50px;">회원정보입력</div>
         <div class="usbox" style="margin-left:40px;">가입완료</div>
-        <div class="tg" style="margin-left:-600px; margin-top: 50px;">
+        <div class="tg" style="margin-left:-635px; margin-top: 50px;">
             <strong>></strong>
         </div>
-        <div class="tg" style="margin-left:-400px; margin-top: 50px;">
+        <div class="tg" style="margin-left:-420px; margin-top: 50px;">
             <strong>></strong>
         </div>
-        <div class="tg" style="margin-left:-200px; margin-top: 50px;">
+        <div class="tg" style="margin-left:-215px; margin-top: 50px;">
             <strong>></strong>
         </div>
         <p style="margin-top: 25px;">
@@ -150,29 +132,29 @@
         <p style="color:red; position:absolute; margin-left: 120px; margin-top: -20px;">*</p>
         <p style="position: absolute; margin-left: 130px; margin-top: -20px;">표시는 필수입력 항목입니다.</p>
         <div class="tx-line"></div>
-        <p style="margin-top: 60px;">한글이름
+        <p style="margin-top: 46px;">한글이름
             <p style="color:red; margin-left: 70px; margin-top: -18px;">*</p>
         </p><input
-            style="margin-left: 100px; margin-top: -20px; position:absolute;"
+            style="margin-left: 125px; margin-top: -20px; position:absolute; background-color: #f4f4f4;"
             type="text">
-        <p style="margin-top: 30px;">영문이름</p><input
-            style="margin-left: 100px; margin-top: -20px; position:absolute;"
+        <p style="margin-top: 25px;">영문이름</p><input
+            style="background-color: #f4f4f4; margin-left: 125px; margin-top: -20px; position:absolute;"
             type="text">
-        <p style="margin-top: 30px;">생년월일
+        <p style="margin-top: 25px;">생년월일
             <p style="color:red; margin-left: 70px; margin-top: -18px;">*</p>
         </p>
         <select
             name="birth"
-            style="margin-left: 100px; margin-top:-25px; position:absolute;">
+            style="margin-left: 125px; margin-top:-25px; position:absolute; background-color: #f4f4f4;">
             <option checked="checked" value="1999">1999</option>
             <option value="2000">2000</option>
             <option value="2001">2001</option>
             <option value="2002">2002</option>
         </select>
-        <p style="margin-left: 152px; margin-top: -28px; position:absolute;">년</p>
+        <p style="margin-left: 177px; margin-top: -28px; position:absolute;">년</p>
         <select
             name="birth"
-            style="margin-left: 180px; margin-top:-25px; position:absolute;">
+            style="background-color: #f4f4f4; margin-left: 205px; margin-top:-25px; position:absolute;">
             <option checked="checked" value="01">01</option>
             <option value="02">02</option>
             <option value="03">03</option>
@@ -186,10 +168,10 @@
             <option value="11">11</option>
             <option value="12">12</option>
         </select>
-        <p style="margin-left: 220px; margin-top: -28px; position:absolute;">월</p>
+        <p style="margin-left: 245px; margin-top: -28px; position:absolute;">월</p>
         <select
             name="birth"
-            style="margin-left: 240px; margin-top:-25px; position:absolute;">
+            style="margin-left: 265px; margin-top:-25px; background-color: #f4f4f4; position:absolute;">
             <option checked="checked" value="01">01</option>
             <option value="02">02</option>
             <option value="02">02</option>
@@ -223,162 +205,161 @@
             <option value="30">30</option>
             <option value="31">31</option>
         </select>
-        <p style="margin-left: 280px; margin-top: -28px; position:absolute;">일</p>
-        <p style="margin-top: 30px;">아이디<p style="color:red; margin-left: 60px; margin-top: -18px; position:absolute;">*</p>
+        <p style="margin-left: 305px; margin-top: -28px; position:absolute;">일</p>
+        <p style="margin-top: 25px;">아이디<p style="color:red; margin-left: 50px; margin-top: -18px; position:absolute;">*</p>
         </p><input
-            style="margin-left: 100px; margin-top: -20px; position: absolute;"
+            style="margin-left: 125px; margin-top: -20px; position: absolute; background-color: #f4f4f4;"
             type="text">
-        <button style="margin-left: 290px; margin-top: -20px; position: absolute;">
+        <button style="margin-left: 315px; margin-top: -20px; position: absolute;">
             <strong>중복확인</strong>
         </button>
         <p
-            style="font-size:13px; opacity:0.8; margin-left: 350px; margin-top: -20px; position: absolute;">사이트내에서 표시되는 본인정보이며 저장 후 수정하실 수 없습니다.</p>
-        <p style="margin-top: 30px;">비밀번호
-            <p style="color:red; margin-left: 70px; margin-top: -18px; position:absolute;">*</p>
+            style="font-size:13px; opacity:0.8; margin-left: 375px; margin-top: -20px; position: absolute;">사이트내에서 표시되는 본인정보이며 저장 후 수정하실 수 없습니다.</p>
+        <p style="margin-top: 25px;">비밀번호
+            <p style="color:red; margin-left: 65px; margin-top: -18px; position:absolute;">*</p>
         </p><input
-            style="margin-left: 100px; margin-top: -20px; position: absolute;"
+            style="background-color: #f4f4f4; margin-left: 125px; margin-top: -20px; position: absolute;"
             type="text">
         <p
-            style="font-size:13px; opacity:0.8; margin-left: 280px; margin-top: -20px; position: absolute;">영문 소문자, 숫자포함 4자리 이상 10자리 이하입니다.</p>
-        <p style="margin-top: 30px;">비밀번호 확인
+            style="font-size:13px; opacity:0.8; margin-left: 305px; margin-top: -20px; position: absolute;">영문 소문자, 숫자포함 4자리 이상 10자리 이하입니다.</p>
+        <p style="margin-top: 25px;">비밀번호 확인
             <p style="color:red; margin-left: 105px; margin-top: -18px; position:absolute;">*</p>
         </p><input
-            style="margin-left: 120px; margin-top: -20px; position: absolute;"
+            style="margin-left: 125px; margin-top: -20px; background-color: #f4f4f4; position: absolute;"
             type="text">
-        <p style="margin-left: 300px; margin-top: -22px; position: absolute;">비밀번호를 한번 더 입력하세요.</p>
-        <p style="margin-top: 30px; display: inline-block;">전화번호</p>
+        <p style="margin-left: 300px; margin-top: -22px; position: absolute;  opacity:0.5;">&nbsp;비밀번호를 한번 더 입력하세요.</p>
+        <p style="margin-top: 25px; display: inline-block;">전화번호</p>
         <select
             name="birth"
-            style="margin-left: 20px; margin-top: -18px; display: inline-block;">
+            style="margin-left: 53px; margin-top: -18px; display: inline-block; background-color: #f4f4f4;">
             <option value="010">010</option>
             <option value="011">011</option>
         </select>
-        <p style="margin-left: 190px; margin-top:-21px ; position:absolute;">-</p><input
-            style="width: 30px; margin-left: 75px; margin-top:33px; position: absolute;"
+        <p style="margin-left: 180px; margin-top:-21px ; position:absolute;">-</p><input
+            style="width: 30px; margin-left: 75px; margin-top:27px; position: absolute; background-color: #f4f4f4;"
             type="text">
-        -<input style="width: 30px; margin-top: 25px; margin-left:10px;" type="text">
-        <p style="margin-top:30px;">휴대폰번호
-            <p style="color:red; margin-left: 85px; margin-top: -18px; position:absolute;">*</p>
-        </p>
+        <p style="margin-left: 230px; margin-top: -20px;">-</p><input style="width: 30px; margin-top: -20px; margin-left:190px; position: absolute; background-color: #f4f4f4;" type="text">
+              <p style="margin-top: 25px; display: inline-block;">휴대폰번호</p>
+			   <p style="color:red; margin-left: 85px; margin-top: -18px; position:absolute;">*</p>
         <select
             name="birth"
-            style="margin-left: 100px; margin-top: -20px; position: absolute;">
+            style="margin-left: 36px; background-color: #f4f4f4; margin-top: -18px; display: inline-block;background-color: #f4f4f4; ">
             <option value="010">010</option>
             <option value="011">011</option>
         </select>
-        <p style="margin-left: 190px; margin-top:-21px ; position:absolute;"></p>
-        <p style="margin-left: 150px; margin-top:-25px; position: absolute;">-</p><input
-            style="width: 30px; margin-left: 160px; margin-top:-20px; position: absolute;"
+        <p style="margin-left: 180px; margin-top:-21px ; position:absolute;">-</p><input
+            style="width: 30px; margin-left: 75px; margin-top:28px; position: absolute; background-color: #f4f4f4;"
             type="text">
-        <p style="margin-left: 205px; margin-top: -25px;">-</p><input
-            style="width: 30px; margin-top: -15px; margin-left:220px; position: absolute;"
-            type="text">
-        <p
-            style="margin-left: 270px; margin-top: -15px; position: absolute; font-size: 15px; opacity:0.5;">예약시 휴대폰으로 문자가 발송됩니다.</p>
-        <p style="margin-top: 30px;">SMS 수신여부
+        <p style="margin-left: 230px; margin-top: -20px;">-</p><input style="width: 30px; margin-top: -20px; margin-left:190px; position: absolute; background-color: #f4f4f4;" type="text">
+        <p 
+            style="margin-left: 280px; margin-top: -23px; position: absolute; font-size: 15px; opacity:0.5;">예약시 휴대폰으로 문자가 발송됩니다.</p>
+        <p style="margin-top: 25px;">SMS 수신여부
             <p style="color:red; margin-left: 105px; margin-top: -18px; position:absolute;">*</p>
         </p>
-        <p style="margin-left: 120px; position: absolute; margin-top: -22px;">예<input
-            style="margin-left: 10px; position: absolute; margin-top: 5px;"
-            type="checkbox"></p>
-        <p style="margin-left: 180px; margin-top: -22px; position: absolute;">아니오<input style="margin-left: 10px;" type="checkbox"></p><p style="margin-left: 270px; margin-top: -23px; opacity:0.5;">회원공지 알림에 대한 수신여부입니다.</p>
-		<p style="margin-left: 190px; position:absolute;"></p>
+        <p style="margin-left: 145px; position: absolute; margin-top: -22px;">예</p>
+		<input
+            style="margin-left: 125px; position: absolute; margin-top: -15px; border-radius:5px; background-color: #f4f4f4;"
+            type="radio" >
+        <p style="margin-left: 200px; margin-top: -22px; position: absolute;">아니오</p>
+		<input style="margin-left: 180px; margin-top: -16px; position: absolute; background-color: #f4f4f4;" type="radio"><p style="margin-left: 270px; margin-top: -23px; opacity:0.5;">회원공지 알림에 대한 수신여부입니다.</p>
+		<p style="margin-left: 190px; position:absolute;">
 
-        <p style="margin-left: px; position: absolute; margin-top: 30px;">E-MAIL</p><input style="margin-left: 100px; margin-top:30px; position: absolute;"
+        <p style="margin-left: px; position: absolute; margin-top: 25px;">E-MAIL</p><input style="margin-left: 125px; margin-top:30px; position: absolute; background-color: #f4f4f4;"
             type="text">
 	
-		<p style="margin-top:80px;">지역 우편번호
+		<p style="margin-top:75px;">지역 우편번호
         <p style="color:red; margin-left: 110px; margin-top: -18px; position:absolute;">*</p>		
 		</p>
-		<input style="width: 30px; margin-left: 125px; margin-top:-20px; position: absolute;" type="text">
-        <p style="margin-left: 162px; margin-top: -20px; position: absolute;">-</p><input style="width: 30px; margin-top: -20px; margin-left:170px; position: absolute;" type="text">
+		<input style="background-color: #f4f4f4; width: 30px; margin-left: 125px; margin-top:-20px; position: absolute;" type="text">
+        <p style="margin-left: 162px; margin-top: -20px; position: absolute;">-</p><input style="background-color: #f4f4f4; width: 30px; margin-top: -20px; margin-left:170px; position: absolute;" type="text">
         <p style="margin-top:30px;">자택주소
             <p style="color:red; margin-left: 75px; margin-top: -18px; position:absolute;">*</p>
         </p>
-		<input style="width: 400px; margin-left: 125px; margin-top:-20px; position: absolute;" type="text">
-		<input style="width: 400px; margin-left: 125px; margin-top:10px; position: absolute;" type="text">
+		<input style="width: 400px; margin-left: 125px; background-color: #f4f4f4; margin-top:-20px; position: absolute;" type="text">
+		<input style="width: 400px; margin-left: 125px; margin-top:10px; position: absolute; background-color: #f4f4f4;" type="text">
 
         <p style="margin-top: 50px;">DM발송처
         <p style="color:red; margin-left: 85px; margin-top: -18px; position:absolute;">*</p>
         </p>
-        <p style="margin-left: 100px; margin-top: -20px; position: absolute;">자택<input style="margin-left: 10px;" type="checkbox"></p>
-		<p style="margin-left: 180px; margin-top: -20px; position: absolute;">직장<input style="margin-left: 10px;" type="checkbox"></p>
+        <p style="margin-left: 145px; margin-top: -20px; position: absolute;">자택<input style="position: absolute; margin-left: -50px; margin-top: 5px;" type="radio"></p>
+		<p style="margin-left: 225px; margin-top: -20px; position: absolute;">직장<input style="position: absolute;  margin-left: -50px; margin-top: 5px;" type="radio"></p>
 		<div class="c-line"></div>
-		 <p style="margin-top: 60px;">직장명
+		 <p style="margin-top: 75px;">직장명
             <p style="color:red; margin-left: 50px; margin-top: -18px;">*</p>
         </p><input
-            style="margin-left: 100px; margin-top: -20px; position:absolute;"
+            style="margin-left: 125px; background-color: #f4f4f4; margin-top: -20px; position:absolute;"
             type="text">
-			<p style="margin-top: 30px;">직종
+			<p style="margin-top: 25px;">직종
         </p><input
-            style="margin-left: 100px; margin-top: -20px; position:absolute;"
+            style="margin-left: 125px; margin-top: -20px; position:absolute; background-color: #f4f4f4;"
             type="text">
-			<p style="margin-top: 30px;">직위
+			<p style="margin-top: 25px;">직위
             <p style="color:red; margin-left: 35px; margin-top: -18px;">*</p>
         </p><input
-            style="margin-left: 100px; margin-top: -20px; position:absolute;"
+            style="background-color: #f4f4f4; margin-left: 125px; margin-top: -20px; position:absolute;"
             type="text">
-			<p style="margin-top:30px;">직장 우편번호
+			<p style="margin-top:25px;">직장 우편번호
         <p style="color:red; margin-left: 100px; margin-top: -18px; position:absolute;">*</p>		
 		</p>
-		<input style="width: 30px; margin-left: 125px; margin-top:-20px; position: absolute;" type="text">
-        <p style="margin-left: 162px; margin-top: -20px; position: absolute;">-</p><input style="width: 30px; margin-top: -20px; margin-left:170px; position: absolute;" type="text"><button style="margin-left: 215px; margin-top: -22px; position: absolute;">우편번호 찾기</button>
-		<p style="margin-top:30px;">직접주소
+		<input style="width: 30px; margin-left: 125px; margin-top:-20px; position: absolute; background-color: #f4f4f4;" type="text">
+        <p style="margin-left: 162px; margin-top: -20px; position: absolute;">-</p><input style="width: 30px; margin-top: -20px; margin-left:170px; position: absolute; background-color: #f4f4f4;" type="text"><button style="margin-left: 215px; margin-top: -22px; position: absolute;">우편번호 찾기</button>
+		<p style="margin-top:25px;">직접주소
             <p style="color:red; margin-left: 65px; margin-top: -18px; position:absolute;">*</p>
         </p>
-		<input style="width: 400px; margin-left: 125px; margin-top:-20px; position: absolute;" type="text">
-		<input style="width: 400px; margin-left: 125px; margin-top:10px; position: absolute;" type="text">
+		<input style="width: 400px; margin-left: 125px; margin-top:-20px; position: absolute; background-color: #f4f4f4;" type="text">
+		<input style="width: 400px; margin-left: 125px; margin-top:10px; position: absolute; background-color: #f4f4f4;" type="text">
 
 		<p style="margin-top: 60px; display: inline-block;">직장전화번호</p>
         <select
             name="birth"
-            style="margin-left: 20px; margin-top: -18px; display: inline-block;">
+            style="margin-left: 25px; margin-top: -18px; background-color: #f4f4f4; display: inline-block;">
             <option value="010">010</option>
             <option value="011">011</option>
 			</select>
-        <p style="margin-left: 175px; margin-top: -22px ; position:absolute;">-</p>
-		<p style="margin-left: 222px; margin-top: -25px ; position:absolute;">-</p>
-        <input style="width: 30px; margin-top: 60px; margin-left:20px; position: absolute;" type="text">
-		<input style="width: 30px; margin-left: 65px; margin-top:60px; position: absolute;" type="text">
-        <p style="margin-top:30px;">팩스번호
+        <p style="margin-left: 180px; margin-top: -22px ; position:absolute;">-</p>
+		<p style="margin-left: 228px; margin-top: -25px ; position:absolute;">-</p>
+        <input style="width: 30px; margin-top: 60px; margin-left:20px; position: absolute; background-color: #f4f4f4;" type="text">
+		<input style="width: 30px; margin-left: 65px; margin-top:60px; position: absolute; background-color: #f4f4f4;" type="text">
+        <p style="margin-top:25px;">팩스번호
             <p style="color:red; margin-left: 85px; margin-top: -18px; position:absolute;">*</p>
         </p>
 	
         <select
             name="birth"
-            style="margin-left: 100px; margin-top: -20px; position: absolute;">
+            style="margin-left: 125px; margin-top: -20px; position: absolute; background-color: #f4f4f4;">
             <option value="010">010</option>
             <option value="011">011</option>
         </select>
-        <p style="margin-left: 190px; margin-top:-21px ; position:absolute;"></p>
-        <p style="margin-left: 150px; margin-top:-25px; position: absolute;">-</p><input
-            style="width: 30px; margin-left: 160px; margin-top:-20px; position: absolute;"
+        <p style="margin-left: 215px; margin-top:-21px ; position:absolute;"></p>
+        <p style="margin-left: 175px; margin-top:-25px; position: absolute;">-</p><input
+            style="background-color: #f4f4f4; width: 30px; margin-left: 185px; margin-top:-20px; position: absolute;"
             type="text">
-        <p style="margin-left: 205px; margin-top: -25px;">-</p><input
-            style="width: 30px; margin-top: -15px; margin-left:220px; position: absolute;"
+        <p style="margin-left: 220px; margin-top: -25px;">-</p><input
+            style="width: 30px; margin-top: -15px; margin-left:230px; position: absolute; background-color: #f4f4f4;"
             type="text">
 
-        <p style="margin-top: 30px;">결혼여부
+        <p style="margin-top: 25px;">결혼여부
         </p>
-        <p style="margin-left: 120px; position: absolute; margin-top: -22px;">미혼<input
-            style="margin-left: 10px; position: absolute; margin-top: 5px;"
-            type="checkbox"></p>
-        <p style="margin-left: 180px; margin-top: -22px; position: absolute;">기혼<input style="margin-left: 10px;" type="checkbox"></p>
+        <p style="margin-left: 140px; position: absolute; margin-top: -22px;">미혼<input
+            style="background-color: #f4f4f4; margin-left: -45px; position: absolute; margin-top: 5px; position: absolute;"
+            type="radio"></p>
+        <p style="margin-left: 200px; margin-top: -22px; position: absolute;">기혼
+		<input style="margin-left: -15px;  position: absolute; margin-top: -15px; background-color: #f4f4f4;" type="radio"></p>
 
-        <p style="margin-top: 30px;">결혼기념일
+        <p style="margin-top: 25px;">결혼기념일
         </p>
         <select
             name="birth"
-            style="margin-left: 100px; margin-top:-25px; position:absolute;">
+            style="margin-left: 125px; margin-top:-25px; position:absolute; background-color: #f4f4f4;">
             <option checked="checked" value="1999">1999</option>
             <option value="2000">2000</option>
             <option value="2001">2001</option>
             <option value="2002">2002</option>
         </select>
-        <p style="margin-left: 152px; margin-top: -28px; position:absolute;">년</p>
+        <p style="margin-left: 177px; margin-top: -28px; position:absolute; background-color: #f4f4f4;">년</p>
         <select
             name="birth"
-            style="margin-left: 180px; margin-top:-25px; position:absolute;">
+            style="background-color: #f4f4f4; margin-left: 205px; margin-top:-25px; position:absolute;">
             <option checked="checked" value="01">01</option>
             <option value="02">02</option>
             <option value="03">03</option>
@@ -392,10 +373,10 @@
             <option value="11">11</option>
             <option value="12">12</option>
         </select>
-        <p style="margin-left: 220px; margin-top: -28px; position:absolute;">월</p>
+        <p style="margin-left: 245px; margin-top: -28px; position:absolute;">월</p> 
         <select
             name="birth"
-            style="margin-left: 240px; margin-top:-25px; position:absolute;">
+            style="background-color: #f4f4f4; margin-left: 265px; margin-top:-25px; position:absolute;">
             <option checked="checked" value="01">01</option>
             <option value="02">02</option>
             <option value="02">02</option>
@@ -429,14 +410,16 @@
             <option value="30">30</option>
             <option value="31">31</option>
         </select>
-        <p style="margin-left: 280px; margin-top: -28px; position:absolute;">일</p>
+        <p style="margin-left: 305px; margin-top: -28px; position:absolute;">일</p>
 		<div class="c-line"></div>
-		<button style="width: 100px; height: 40px; position: absolute; margin-top: 60px; margin-left: 400px;">취소</button>
-		<button style="width: 100px; height: 40px; position: absolute; margin-top: 60px; margin-left: 520px; background-color: blue; color:white">다음</button>
-			<div class="c2-line" style="margin-top: 200px; background-color: black;"></div>		
+		<input type="reset" value="취소" style="background-color: #f4f4f4; width: 100px; height: 40px; position: absolute; margin-top: 60px; margin-left: 400px; background-color: #eeeeee; border-radius:5px;">
+		<button style="width: 100px; height: 40px; position: absolute; margin-top: 60px; margin-left: 510px; background-color: #0085f6; color:white; border-radius:5px;">다음</button>
+			<div class="c2-line" style="margin-top: 160px; background-color: black;"></div>		
 			</div>
-			<footer><img src="sky2.jpg" style="position: absolute; z-index:-999">
+			<footer>
+					<img src="FOOTER_SUB.PNG" style="position: absolute; z-index:-999; margin-top: -250px;">
 			<div class="li4-wrap">
+
 				<ul>
 					<strong><li class="li4">회칙 및 이용약관</li>
 					<li class="li4">개인정보 취급방침</li>
@@ -454,7 +437,8 @@
 				<li class="li5">개인정보관리책임자:윤두환 031-880-6000</li>
 			</ul>
 		</div>
-		<p style="margin-top: -250px; margin-left: 400px;">Copyright (c) Kumkang leisure Ltd. All rights reserved</p>
+		<p style="margin-top: -220px; margin-left: 400px;">Copyright (c) Kumkang leisure Ltd. All rights reserved</p>
 			</footer>
+			</div>
  </body>
 </html>
