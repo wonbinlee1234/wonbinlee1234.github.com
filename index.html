@@ -16,9 +16,9 @@
 </style>
 <body>    
    <section>
-    <input type="text" id="ip1" onkeydown="return showKeyCode(event)">
-    <input type="text" id="ip2" onkeydown="return showKeyCode(event)">
-    <input type="text" id="ip3" onkeydown="return showKeyCode(event)">
+    <input type="text" id="ip1">
+    <input type="text" id="ip2">
+    <input type="text" id="ip3">
     <div id="textbox"><span>야구게임 시작</span></div>
     <button id="rt">처음부터</button>
     <button id="scan">시구</button>
@@ -66,7 +66,7 @@ $("#scan").click(function(){
     player[2] = $("#ip3:text").val();
         $("#ip3:text").val("");
     if(go==10){
-        tb.append(st+"게임 끝 다시시작하세요"+et);
+        tb.append(st+"게임 끝 다시시작 하세요"+et);
         return;
     }
     for(var i=0; i<3; i++){
@@ -95,7 +95,7 @@ $("#scan").click(function(){
         go++;
         tb.append(st+go+"회"+et);
     }
-    s=0;
+    s=0;/
     b=0;
     o=0;
 });
