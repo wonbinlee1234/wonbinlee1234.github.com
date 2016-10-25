@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>비교게임</title>
+    <script src="jquery-3.1.0.min.js"></script>
+
+</head>
+<style>
+	#awrap{width: 705px; height: 430px; background-color: skyblue; margin: 100px auto;}
+    #wrap{width: 700px; height: 200px; border: 3px solid; margin: 100px auto;}
+	
+    #box{width: 86px; height: 100px; background-color: blue; display: inline-block; font-size: 80px; text-align: center;}
+    #box2{width: 86px; height: 100px; background-color: blue; display: inline-block; font-size: 80px; text-align: center;}
+	#box3{width: 86px; height: 100px; background-color: blue; display: inline-block; font-size: 80px; text-align: center; margin-left: 50px;}
+	#box4{width: 86px; height: 100px; background-color: blue; display: inline-block; font-size: 80px; text-align: center;}
+	
+	#fsbox{width: 50px; height: 100px; background-color: #00F3FF; display: inline-block; margin-top: 10px;}
+	#ssbox{width: 50px; height: 100px; background-color: #00F3FF; display: inline-block; }
+	#qmbox{width: 100px; height: 100px; background-color: #00F3FF; display: inline-block; margin-left: 50px; font-size: 24px; text-align: center;}
+	
+    .input_wrap{width: 700px; height: 50px; background-color: black;}
+    #sign_wrap{width: 80px; height: 20px; margin-top: 70px;}
+    #sign{color: white; margin-left: 8px;}
+	
+	#textbox{width: 700px; height: 200px; border: 3px solid; margin-top: -80px; overflow:auto;}
+</style>
+<body>
+<div id="awrap">
+	<div id="wrap">
+	       <div id="box"></div>
+	       <div id="fsbox">
+	       	<input type="radio" name="sign2" class="rdo1" value="+">&#43;
+	       	<input type="radio" name="sign2" class="rdo1" value="-">&#45;
+	       	<input type="radio" name="sign2" class="rdo1" value="*">&#42;
+	       	<input type="radio" name="sign2" class="rdo1" value="/">&#247;
+
+	       </div>
+	       <div id="box2"></div>
+	       <div id="qmbox">
+	        무엇이 더 클까요?
+	       </div>
+	       <div id="box3"></div>
+	       <div id="ssbox">
+	       	<input type="radio" name="sign3" class="rdo1" value="+">&#43;
+	       	<input type="radio" name="sign3" class="rdo1" value="-">&#45;
+	       	<input type="radio" name="sign3" class="rdo1" value="*">&#42;
+	       	<input type="radio" name="sign3" class="rdo1" value="/">&#247;
+	       	
+	       </div>
+	       <div id="box4"></div>
+	        <div class="input_wrap">
+	            <div id="sign_wrap">
+	               <span id="sign">&#62;</span>
+	               <span id="sign">&#61;</span>
+	               <span id="sign">&#60;</span>
+	           </div>
+	            <input type="radio" name="sign" class="rdo1" value=">">
+	            <input type="radio" name="sign" class="rdo2" value="=">
+	            <input type="radio" name="sign" class="rdo3" value="<">
+	            <button onclick="ok()">제출</button>
+	            <button onclick="reset()">초기화</button>
+	        </div>
+	   </div>
+   <div id="textbox"></div>
+   </div>
+</body>
+   <script src="js.js"></script>
+</html>
