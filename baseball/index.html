@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>BaseBall game</title>
+  <script src="jquery-3.1.0.min.js"></script>
+    </head>
+<style>
+    *{margin: 0 ; padding: 0;}
+    body{background-image: url('baseball.jpg'); overflow-y:hidden;}
+    section{width: 1000px; height: 800px; border: 1px solid; margin: 0 auto; margin-top: 100px; font-size: 15px;}
+    input{width: 100px; height: 100px; font-size: 2em; line-height: 40px; text-align: center; margin-left: 15px;}    
+    #textbox{width: 500px; height: 800px; overflow:auto; background-color: black; color:white; float: left; font-family: fantasy; font-size: 15px;}
+    .box{width: 400px; height: 400px; position:absolute; margin-left:500px; margin-top: 450px;}
+    button{width: 60px; height: 105px; float: right;}
+</style>
+<body>    
+   <section>
+    <input type="text" id="ip1">
+    <input type="text" id="ip2">
+    <input type="text" id="ip3">
+    <div id="textbox"><span>야구게임 시작</span></div>
+    <button id="rt">처음부터</button>
+    <button id="scan">시구</button>
+    <div class="box"><img src="baseball2.jpg"></div>
+    </section>
+</body>
+<script type="text/javascript">
+var player = new Array();
+var com = new Array();
+var s;
+var b;
+var o;
+var go;
+var st = "<br><br><span>";
+var et = "</span>";
+var tb = $("#textbox").children();
+var num = /^[0-9]+$/;
+
+function reset(){//모든 기록을 지우고 새로 시작함
+    com[0] = -2;
+    com[1] = -1;
+    com[2] = 0;
+    for(var i=0; i<3; i++){
+       com[i] = Math.floor(Math.random()*9)+1;//랜덤 숫자 지정, *9라는 뜻은 0~8 +1 1~9
+       if(com[0]==com[1]||com[0]==com[2]||com[1]==com[2]){
+           i--;
+           continue;
+       }
+       console.log(com[i]);
+    }
+    s=0;
+    b=0;
+    o=0;
+    go=1;
+    tb.empty();
+    tb.append("<span>규칙:오직 숫자만되고 중복숫자,특수문자 안되고 한칸에 숫자 1개씩만 입력이 가능합니다. 그리고 9회까지 있습니다."+et);
+    tb.append(st+go+"회"+et);
+}
+reset();
+$("#scan").click(function(){
+    player[0] = $("#ip1:text").val();
+        $("#ip1:text").val("");
+    player[1] = $("#ip2:text").val();
+        $("#ip2:text").val("");
+    player[2] = $("#ip3:text").val();
+        $("#ip3:text").val("");
+    if(go==10){
+        tb.append(st+"게임 끝 다시시작 하세요"+et);
+        return;
+    }
+    for(var i=0; i<3; i++){
+        if(player[0]==player[1]||player[0]==player[2]||player[1]==player[2]||player[i]<1||player[i]>9||!num.test(player[0])||!num.test(player[1])||!num.test(player[2])){
+            tb.append(st+"잘못 입력한거 같으니 다시 입력하세요."+et);
+            return;
+       }
+    }
+    for(var i=0; i<3; i++){
+        for(var j=0; j<3; j++){
+            if(player[i]==com[j]){
+                if(i==j) s++;
+                else b++;
+                break;
+            }
+            else if(j==2) o++;
+        }
+    }
+    console.log("s:"+s+" b:"+b+" o:"+o);
+    tb.append(st+"STRIKE:"+s+" BALL:"+b+" OUT:"+o+et);
+    if(s==3){
+        tb.append(st+"게임 종료"+et);
+        go=10;
+    }
+    else{
+        go++;
+        tb.append(st+go+"회"+et);
+    }
+    s=0;
+    b=0;
+    o=0;
+});
+$("#rt").click(reset);
+
+</script>
+</html>
