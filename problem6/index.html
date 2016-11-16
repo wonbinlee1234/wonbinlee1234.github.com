@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>진수변환</title>
+	<script src="jquery-3.1.0.min.js"></script>
+</head>
+<style>
+	section{width: 500px; height: 500px; background-color: red; margin-top: 250px; margin-left: 700px;}
+	#j2{width: 500px; height: 50px; background-color: white; border: 1px solid; margin-top: 50px;}
+	#j8{width: 500px; height: 50px; background-color: white; border: 1px solid; margin-top: 40px;}
+	#j16{width: 500px; height: 50px; background-color: white; border: 1px solid; margin-top: 40px;}
+	#j60{width: 500px; height: 50px; background-color: white; border: 1px solid; margin-top: 40px;}
+	#ask{width: 500px; height: 50px; background-color: white; border: 1px solid; margin-top: 40px;}
+	</style>
+<body>
+	<section>
+		<input type="text" id="jinsu">
+			<button id="one" onclick="go()">2진수</button>
+			<button id="two" onclick="go2()">8진수</button>
+			<button id="three" onclick="go3()">16진수</button>
+			<button id="four" onclick="go4()">60진수</button>
+			<button id="aski" onclick="go5()">아스키</button>
+			<div id="j2"></div>
+			<div id="j8"></div>
+			<div id="j16"></div>
+			<div id="j60"></div>
+			<div id="ask"></div>
+	</section>
+</body>
+		<script type="text/javascript">
+
+			function go(){
+				var out = [];
+				var input =  Number($("#jinsu").val());
+				
+			while(input!=0){
+				out.push(input%2);
+				input=parseInt(input/2);
+			}
+				out.reverse();
+				console.log(out);
+				$("#j2").empty();
+				$("#j2").append(out + '<br/>');
+				}
+			
+			
+			
+			
+			function go2(){
+				var out = [];
+				var input =  Number($("#jinsu").val());
+				
+			while(input!=0){
+				out.push(input%8);
+				input=parseInt(input/8);
+			}
+				out.reverse();
+				console.log(out);
+				$("#j8").empty();
+				$("#j8").append(out + '<br/>');
+				}
+			
+			
+			
+			
+			function go3(){
+				var out = [];
+				var input =  Number($("#jinsu").val());
+				
+			while(input!=0){
+				out.push(input%16);
+				if(out[out.length-1]==10)
+					out[out.length-1] = 'A'
+					if(out[out.length-1]==11)
+					out[out.length-1] = 'B'
+					if(out[out.length-1]==12)
+					out[out.length-1] = 'C'
+					if(out[out.length-1]==13)
+					out[out.length-1] = 'D'
+					if(out[out.length-1]==14)
+					out[out.length-1] = 'E'
+					if(out[out.length-1]==15)
+					out[out.length-1] = 'F'
+				input=parseInt(input/16);
+			}
+				out.reverse();
+				console.log(out);
+				$("#j16").empty();
+				$("#j16").append(out + '<br/>');
+				}
+			
+			
+			
+			
+			function go4(){
+				var out = [];
+				var input =  Number($("#jinsu").val());
+				
+			while(input!=0){
+				out.push(input*0.01);
+				input=parseInt(input*0.01);
+			}
+				out.reverse();
+				console.log(out);
+				$("#j60").empty();
+				$("#j60").append(out + '<br/>');
+				}
+			
+			
+			
+			
+			function go5(){
+				var input =  $("#jinsu").val();
+				console.log(input.charCodeAt());
+				$("#ask").empty();
+				$("#ask").append(input.charCodeAt() + '<br/>');
+				}
+			
+			
+		</script>
+</html>

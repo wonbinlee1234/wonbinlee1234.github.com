@@ -36,17 +36,21 @@
 		console.log(com);
 		i.push(com);
 		console.log(i);
-		for(var k=0; k<i.length; k++) {
-			 for(var j=0; j<i.length-k-1; j++) {
-			  console.log(i[j] +" "+ i[j+1]);
-				 if( i[j] > i[j+1] ) {
-			   var a = i[ j ];
-			   var b = i[j+1];
-			   i[ j ] = b;
-			   i[j+1] = a;
-			  }
-			 }
-			}
+		
+		for(var k=0; k<i.length; k++){
+			
+		}
+//		for(var k=0; k<i.length; k++) {
+//			 for(var j=0; j<i.length-k-1; j++) {
+//			  console.log(i[j] +" "+ i[j+1]);
+//				 if( i[j] > i[j+1] ) {
+//			   var a = i[ j ];
+//			   var b = i[j+1];
+//			   i[ j ] = b;
+//			   i[j+1] = a;
+//			  }
+//			 }
+//			}
 		$("#ubox").empty();
 		$("#dbox").empty();
 		for(var j=0;j<i.length; j++){
